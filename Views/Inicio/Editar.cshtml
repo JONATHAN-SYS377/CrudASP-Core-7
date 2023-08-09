@@ -1,0 +1,70 @@
+﻿@model CrudASP.Models.Contacto
+
+@{
+    ViewData["Title"] = "Editar Contacto";
+}
+
+<div class="text-center">
+    <Image class="offser-9 col-3 mb-3" style="width:100px; height:100px" src="https://play-lh.googleusercontent.com/kyA7O0EaQqSDdnlB6-OkUkfHOn2t6YxOkO1cT9W5cdOQVxva9e6l85rhJ5Au5Ugzd9o"></Image>
+    <h1 class="text-center">Contactos INA Upala ASP.Net Core 7</h1>
+</div>
+
+<div class="row">
+    <div class="offser-12">
+        <div class="card border">
+            <div class="card-header bg-dark">
+                <h3 class="text-white">
+                    <strong>
+                        Editar Contacto
+                    </strong>
+                </h3>
+
+            </div>
+            <div class="card-body">
+                <form asp-action="Editar">
+
+                    @* Enviamos el ID de manera Oculta *@
+
+                    <input type="hidden" asp-for="Id" />
+
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-group">
+                        <label asp-for="Nombre" class="control-label"></label>
+                        <input asp-for="Nombre" class="form-control" placeholder="Ingresa el Nombre" />
+                        <span asp-validation-for="Nombre" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Telefono" class="control-label"></label>
+                        <input asp-for="Telefono" class="form-control" placeholder="Ingresa el Telefono" />
+                        <span asp-validation-for="Telefono" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Celular" class="control-label"></label>
+                        <input asp-for="Celular" class="form-control" placeholder="Ingresa el Celular" />
+                        <span asp-validation-for="Celular" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Email" class="control-label"></label>
+                        <input asp-for="Email" class="form-control" placeholder="Ingresa el Email" />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                    <div class="form-group mt-3">
+                        <button type="submit" class=" btn btn-outline-info d-block mx-auto">
+                            <svg style="margin-right: 5px" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                                <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                                <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
+                            </svg>
+                              Editar Usuario
+                        </button>
+                    </div>
+                </form>
+                <a asp-action="Index" asp-controller="Inicio"> Regresar</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+

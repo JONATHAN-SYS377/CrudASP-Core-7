@@ -1,0 +1,89 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+    background-color: #031633;
+}
+
+body {
+    margin-bottom: 100px;
+    background-color: #031633;
+    padding-bottom: 60px;
+    
+    overflow-y: scroll;
+}
+
+/* Estilo para el encabezado */
+.headers {
+    position: fixed;
+    z-index: 99999999999999999999999999999999999;
+    top: 0 !important;
+    width: 100%;
+    background-color: #031633;
+}
+
+.main {
+    padding-top: 60px;
+    
+}
+
+.box-shadow[b-qle6lqud89] {
+    /*box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, .05);*/
+    animation: blinkShadow 5s infinite;
+}
+.border-bottom[b-qle6lqud89] {
+    border-bottom: 1px solid #e5e5e5;
+    animation: blinkBorder 5s infinite
+}
+
+
+
+
+
+@keyframes blinkBorder {
+    0%, 100% {
+        border-color: #379AFE;
+    }
+
+    25% {
+        border-color: #6610F2;
+    }
+
+    50% {
+        border-color: #D63384;
+    }
+
+    75% {
+        border-color: #F97C14; /* Puedes ajustar los colores aquí */
+    }
+}
+@keyframes blinkShadow {
+    0%, 100% {
+        box-shadow: 0px 0px 15px 0px #379AFE; /* Cambio de sombra */
+    }
+
+    25% {
+        box-shadow: 0px 0px 15px 0px #6610F2;
+    }
+
+    50% {
+        box-shadow: 0px 0px 15px 0px #D63384;
+    }
+
+    75% {
+        box-shadow: 0px 0px 15px 0px #F97C14;
+    }
+}

@@ -1,0 +1,69 @@
+﻿@model CrudASP.Models.Contacto
+
+@{
+    ViewData["Title"] = "Eliminar Contacto";
+}
+
+<div class="text-center">
+    <Image class="offser-9 col-3 mb-3" style="width:100px; height:100px" src="https://play-lh.googleusercontent.com/kyA7O0EaQqSDdnlB6-OkUkfHOn2t6YxOkO1cT9W5cdOQVxva9e6l85rhJ5Au5Ugzd9o"></Image>
+    <h1 class="text-center">Contactos INA Upala ASP.Net Core 7</h1>
+</div>
+
+<div class="row">
+    <div class="offser-12">
+        <div class="card border">
+            <div class="card-header bg-dark">
+                <h3 class="text-white">
+                    <strong>
+                        Eliminar Contacto
+                    </strong>
+                </h3>
+
+            </div>
+            <div class="card-body">
+                <form asp-action="Eliminar">
+
+                    @* Enviamos el ID de manera Oculta *@
+
+                    <input type="hidden" asp-for="Id" />
+
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-group">
+                        <label asp-for="Nombre" class="control-label"></label>
+                        <input asp-for="Nombre" class="form-control" placeholder="Ingresa el Nombre" />
+                        <span asp-validation-for="Nombre" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Telefono" class="control-label"></label>
+                        <input asp-for="Telefono" class="form-control" placeholder="Ingresa el Telefono" />
+                        <span asp-validation-for="Telefono" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Celular" class="control-label"></label>
+                        <input asp-for="Celular" class="form-control" placeholder="Ingresa el Celular" />
+                        <span asp-validation-for="Celular" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Email" class="control-label"></label>
+                        <input asp-for="Email" class="form-control" placeholder="Ingresa el Email" />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                    <div class="form-group mt-3">
+                        <button style="border-radius: 10px" type="submit" class=" btn btn-outline-danger d-block mx-auto">
+                            <svg style="margin-right: 5px;  xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-fill-x" viewBox="0 0 16 16">
+                                <path d="M11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm-9 8c0 1 1 1 1 1h5.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.544-3.393C9.077 9.038 8.564 9 8 9c-5 0-6 3-6 4Z" />
+                                <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm-.646-4.854.646.647.646-.647a.5.5 0 0 1 .708.708l-.647.646.647.646a.5.5 0 0 1-.708.708l-.646-.647-.646.647a.5.5 0 0 1-.708-.708l.647-.646-.647-.646a.5.5 0 0 1 .708-.708Z" />
+                            </svg>
+                            Eliminar Usuario
+                        </button>
+                    </div>
+                </form>
+                <a asp-action="Index" asp-controller="Inicio"> Regresar</a>
+            </div>
+        </div>
+    </div>
+</div>
+

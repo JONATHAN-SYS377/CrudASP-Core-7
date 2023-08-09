@@ -1,0 +1,251 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+label{
+    color:white;
+}
+body {
+    margin-bottom: 60px;
+}
+div{
+    color:white;
+}
+.ImagenP {
+    width: 100px;
+    height: 100px;
+    background-color: #031633;
+}
+
+.cardHeaderPersonalisada {
+   /* background-color: #031633;*/
+    color: #379AFE;
+    font-size: 25px;
+ 
+    box-shadow: 0px 0px 10px 0px ; /* Agrega una sombra inicial */
+    animation: blinkBorder 5s infinite, blinkText 5s infinite;
+}
+.textocolor {
+   
+    animation:  blinkText 5s infinite;
+}
+.CardBodyPersonalizada {
+    /*border: 2px solid;*/ /* Aumentar el tamaño del borde */
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px 0px ; /* Agrega una sombra inicial */
+    animation: blinkShadow 5s infinite;
+}
+
+.BorderRadios {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    
+}
+.Espacio {
+    padding: 15px;
+    margin: 15px;
+}
+
+/* Efecto de agrandar al hacer hover */
+.boton-efecto:hover svg {
+    transform: scale(1.3);
+}
+
+.bodyAgenda {
+    background-color: #031633;
+    color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding-left:20px;
+}
+.bodyAgenda2 {
+    background-color: #031633;
+    color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding:0px;
+
+}
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    background-color: #031633;
+    background-clip: border-box;
+    /* border: 1px solid rgba(0,0,0,.125); */
+    border-radius: 0.25rem;
+}
+.border {
+     border:0px solid #dee2e6!important; */
+}
+
+.dataTables_info{
+    color:white;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:active {
+    cursor: default;
+    color: #fff !important;
+    border: 1px solid transparent;
+    background: transparent;
+    box-shadow: none;
+   
+}
+.dataTables_wrapper .dataTables_length, .dataTables_wrapper .dataTables_filter, .dataTables_wrapper .dataTables_info, .dataTables_wrapper .dataTables_processing, .dataTables_wrapper .dataTables_paginate {
+    color: #fff !important;
+    padding-bottom: 5px;
+}
+
+.tables {
+    --bs-table-bg: #031633;
+    --bs-table-accent-bg: #031633;
+    --bs-table-striped-color: #379AFE;
+    --bs-table-striped-bg: #379AFE;
+    --bs-table-active-color: #379AFE;
+    --bs-table-active-bg: #379AFE;
+    --bs-table-hover-color: #379AFE;
+    --bs-table-hover-bg: rgba(0, 0, 0, 0.075);
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #fff;
+    vertical-align: top;
+    border-color: #379AFE;
+}
+.Modales {
+    background-color: #031633;
+    margin-top: 80px;
+    border-radius: 20px;
+    border: 1px solid;
+    animation: blinkBorder 5s infinite
+}
+.BorderBotton {
+    border-bottom: 1px solid;
+    animation: blinkBorder 5s infinite
+}
+.modal-bodys {
+    position: relative;
+    flex: 1 1 auto;
+    /* padding: 1rem; */
+}
+.BorderTop {
+    border-top: 1px solid;
+    animation: blinkBorder 5s infinite
+}
+.modal-footers {
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    justify-content: space-between;
+    padding: 0.75rem;
+    margin-top:20px;
+    /* border-top: 1px solid #dee2e6; */
+    border-bottom-right-radius: calc(0.3rem - 1px);
+    border-bottom-left-radius: calc(0.3rem - 1px);
+}
+.forms{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.btnCerrar {
+    font-size: 15px;
+    animation: blinkText 5s infinite;
+    border-radius: 100%;
+    
+}
+
+    .btnCerrar:hover{
+        background-color: red;
+    }
+
+.mb-3 {
+    margin-bottom: 3px;
+}
+
+.ColorLista {
+background-color:#031633;
+color: white;
+}
+
+.Separacion {
+    margin-left: 7px;
+    margin-right: 7px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+.Labelmodal {
+    margin-top: 10px;
+    padding-top: 3px;
+}
+
+
+
+@keyframes blinkBorder {
+    0%, 100% {
+        border-color: #379AFE;
+    }
+
+    25% {
+        border-color: #6610F2;
+    }
+
+    50% {
+        border-color: #D63384;
+    }
+
+    75% {
+        border-color: #F97C14; /* Puedes ajustar los colores aquí */
+    }
+}
+
+@keyframes blinkText {
+    0%, 100% {
+        color: #379AFE;
+    }
+
+    25% {
+        color: #6610F2;
+    }
+
+    50% {
+        color: #D63384;
+    }
+
+    75% {
+        color: #F97C14;
+    }
+}
+
+@keyframes blinkShadow {
+    0%, 100% {
+        box-shadow: 0px 0px 15px 0px #379AFE; /* Cambio de sombra */
+    }
+
+    25% {
+        box-shadow: 0px 0px 15px 0px #6610F2;
+    }
+
+    50% {
+        box-shadow: 0px 0px 15px 0px #D63384;
+    }
+
+    75% {
+        box-shadow: 0px 0px 15px 0px #F97C14;
+    }
+}
